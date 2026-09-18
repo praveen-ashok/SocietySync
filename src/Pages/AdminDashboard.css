@@ -1,0 +1,221 @@
+.admin-dashboard {
+  padding: 30px;
+  background-color: #f5f6fa;
+  min-height: calc(100vh - 64px);
+}
+
+/* Header */
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #134e4a;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #666;
+}
+
+/* Cards */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.dashboard-card h3 {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.dashboard-card h2 {
+  margin: 14px 0 5px;
+  font-size: 28px;
+  color: #0f766e;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #777;
+  font-size: 12.5px;
+}
+
+/* Quick Actions */
+
+.quick-actions {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.quick-actions h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #134e4a;
+}
+
+.quick-actions button {
+  border: none;
+  padding: 10px 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #0f766e;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quick-actions button:hover {
+  background-color: #0b5b54;
+}
+
+/* Recent Activity */
+
+.admin-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.admin-activity-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.admin-activity-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.admin-activity-card-head h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #134e4a;
+}
+
+.admin-view-all-btn {
+  border: 1px solid #0f766e;
+  background: white;
+  color: #0f766e;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-view-all-btn:hover {
+  background: #0f766e;
+  color: white;
+}
+
+.admin-empty-text {
+  color: #777;
+  margin: 0;
+}
+
+.admin-activity-card table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 460px;
+}
+
+.admin-activity-card th {
+  background-color: #134e4a;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.admin-activity-card td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13.5px;
+}
+
+.admin-booking-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-booking-status.confirmed {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.admin-booking-status.cancelled {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+/* Status */
+
+.pending,
+.in-progress,
+.resolved {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.in-progress {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+.resolved {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  .quick-actions button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
