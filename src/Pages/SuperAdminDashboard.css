@@ -1,0 +1,101 @@
+/* Super Admin - Add Society form + Society List */
+
+.society-form {
+  max-width: 520px;
+}
+
+.society-form-group {
+  margin-bottom: 16px;
+}
+
+.society-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.society-form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.society-form-group input:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.society-error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.society-form-actions button,
+.quick-actions .society-form-actions button {
+  margin-right: 10px;
+}
+
+.quick-actions .society-secondary-btn {
+  background-color: #6b7280;
+}
+
+.quick-actions .society-secondary-btn:hover {
+  background-color: #4b5563;
+}
+
+.society-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.society-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.society-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.society-item h4 {
+  margin: 0 0 6px;
+  color: #134e4a;
+  font-size: 17px;
+}
+
+.society-item p {
+  margin: 0 0 3px;
+  color: #666;
+  font-size: 14px;
+}
+
+.society-manage-panel {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.society-remove-btn {
+  border: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  background-color: #dc2626;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.society-remove-btn:hover {
+  background-color: #b91c1c;
+}

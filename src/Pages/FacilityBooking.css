@@ -1,0 +1,272 @@
+.booking-container {
+  padding: 30px;
+  background-color: #f5f6fa;
+  min-height: calc(100vh - 64px);
+}
+
+.booking-header {
+  margin-bottom: 25px;
+}
+
+.booking-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #134e4a;
+}
+
+.booking-header p {
+  margin-top: 8px;
+  color: #666;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.booking-form-box,
+.booking-list-box {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form-box h3,
+.booking-list-box h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #134e4a;
+  font-size: 18px;
+}
+
+.booking-form-group {
+  margin-bottom: 16px;
+}
+
+.booking-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.booking-form-group input,
+.booking-form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.booking-form-group input:focus,
+.booking-form-group select:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.booking-submit-btn {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: #0f766e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-submit-btn:hover:not(:disabled) {
+  background: #0b5b54;
+}
+
+.booking-submit-btn:disabled {
+  background: #a9c9c6;
+  cursor: not-allowed;
+}
+
+/* Slot Availability Grid */
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.slot-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border: 1.5px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.slot-time {
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+}
+
+.slot-tag {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 20px;
+}
+
+.slot-available {
+  border-color: #0f766e;
+}
+
+.slot-available .slot-tag {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.slot-available:hover {
+  background: #e6fbf8;
+}
+
+.slot-selected {
+  border-color: #0f766e;
+  background: #0f766e;
+}
+
+.slot-selected .slot-time {
+  color: white;
+}
+
+.slot-selected .slot-tag {
+  background: white;
+  color: #0f766e;
+}
+
+.slot-booked {
+  border-color: #eee;
+  background: #f3f3f3;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.slot-booked .slot-tag {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.booking-status-tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.booking-status-tag.confirmed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.booking-status-tag.cancelled {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.booking-alert {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  margin-bottom: 16px;
+}
+
+.booking-alert-error {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.booking-alert-success {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.booking-empty-text {
+  color: #777;
+  margin: 0;
+}
+
+.booking-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+
+.booking-item h4 {
+  margin: 0 0 4px;
+  color: #222;
+  font-size: 15px;
+}
+
+.booking-item p {
+  margin: 0;
+  color: #666;
+  font-size: 13.5px;
+}
+
+.booking-cancel-btn {
+  border: 1px solid #dc2626;
+  background: white;
+  color: #dc2626;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.booking-cancel-btn:hover {
+  background: #dc2626;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .booking-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .booking-container {
+    padding: 15px;
+  }
+
+  .booking-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .booking-cancel-btn {
+    width: 100%;
+  }
+}

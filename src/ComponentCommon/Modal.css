@@ -1,0 +1,81 @@
+.ss-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(19, 78, 74, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.ss-modal-box {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.ss-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.ss-modal-header h3 {
+  margin: 0;
+  color: #134e4a;
+  font-size: 18px;
+}
+
+.ss-modal-close {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.ss-modal-close:hover {
+  color: #dc2626;
+}
+
+.ss-modal-body {
+  padding: 22px;
+}
+
+.ss-detail-row {
+  margin-bottom: 16px;
+}
+
+.ss-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.ss-detail-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 5px;
+}
+
+.ss-detail-value {
+  margin: 0;
+  color: #222;
+  font-size: 15px;
+  line-height: 1.5;
+}
